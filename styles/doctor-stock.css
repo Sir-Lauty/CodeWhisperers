@@ -1,0 +1,139 @@
+*{
+    font-family: 'TW Cen MT', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+body{
+    margin: 0px;
+    background-color: #0F172A;
+    color: #ffffff;
+    margin: 0;
+}
+/* Header */
+.logo_header{
+    place-items: center;
+    display: grid;
+    background: #232e3e;
+}
+.hiperlinks_header{
+    place-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1E293B;
+}
+.hiperlinks_header .hiperlink{
+    border: 2px solid transparent;
+}
+.hiperlinks_header .hiperlink:hover{
+    border: 2px solid #ffffff;
+}
+#logo_name{
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 50px;
+    margin: 15px;
+    margin-bottom: 0px;
+}
+#logo_name:hover{
+    color:#3B82F6;
+}
+#logo_img{
+    margin-top: 18px;
+    margin-left: 25px;
+}
+#logo_img_DS{
+    margin-top: 0px;
+    margin-left: 25px;
+}
+.hiperlink{
+    font-size: 50px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.hiperlink:hover{
+    color:#3B82F6;
+}
+
+/* doctor-stock */
+.aside_doctor_stock_img{
+    width: 75%;
+    margin-top: 15px;
+}
+.list_img_ds{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(401px, 1fr));
+    gap: 32px;
+}
+.list_img{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.list_img_fig{
+    width: 401px;
+    height: 313px;
+    display: grid;
+    grid-template-rows: minmax(100%, 1fr);
+    grid-template-areas: "stack";
+    overflow: hidden;
+    border: 3px solid #002988;
+    border-radius: 20px;
+}
+.list_img_fig img, .list_img_fig figcaption{
+    grid-area: stack;
+}
+.list_img_fig img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.list_img_fig figcaption{
+    background-color: #000000cc;
+    transform: translateY(calc(100% - 3rem));
+    transition: transform 0.6s;
+    color: #ffffff;
+    text-align: center;
+}
+.list_img_fig > figcaption > h3{
+    margin-top: 10px;
+    font-size: 25px;
+}
+.list_img_fig > figcaption > p{
+    font-size: 30px;
+}
+.list_img_fig:hover figcaption{
+    transform: none;
+}
+.doctor-stock-main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content:space-between;
+}
+#list_components{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+#doctor-stock-summary_info{
+    margin: 20px;
+    margin-left: 149px;
+}
+#doctor-stock-summary_info h2{
+    font-size: 50px;
+}
+#doctor-stock-summary_info p{
+    font-size: 30px;
+}
+.info_whisperers-py{
+    min-width: 28%;
+    max-width: 28%;
+    text-align: center;
+    margin-right: 50px;
+}
+.info_whisperers-py img{
+    margin-top:80px;
+    height: 200px;
+}
+.info_whisperers-py p, .info_whisperers-py list{
+    text-align: justify;
+    font-size: 25px;
+}
