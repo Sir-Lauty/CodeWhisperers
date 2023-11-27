@@ -53,6 +53,33 @@ body{
 }
 
 /* Index */
+.slider-frame{
+    width: 1009px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 200%;
+    animation: slide 8s infinite alternate ease-in-out;
+}
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+@keyframes slide {
+    0% {margin-left: 0;}
+    45% {margin-left: 0;}
+
+    50% {margin-left: -100%;}
+    95% {margin-left: -100%;}
+}
 .index_main{
     display: flex;
     flex-direction: row;
