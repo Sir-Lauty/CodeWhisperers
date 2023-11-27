@@ -63,7 +63,7 @@ body{
     display: flex;
     padding: 0;
     width: 200%;
-    animation: slide 8s infinite alternate ease-in-out;
+    animation: slide 8s infinite;
 }
 .slider-frame li {
 	width: 100%;
