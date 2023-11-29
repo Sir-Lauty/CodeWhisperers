@@ -23,7 +23,7 @@ body{
     border: 2px solid transparent;
 }
 .hiperlinks_header .hiperlink:hover{
-    border: 2px solid #ffffff;
+    background-color: #ffffff30;
 }
 #logo_name{
     color:#ffffff;
@@ -51,66 +51,67 @@ body{
 .hiperlink:hover{
     color:#3B82F6;
 }
-
-/* SensARinclusive */
-.SensARinclusive_slider_article{
+/* Footer */
+footer{
+    background-color: #232e3e;
+    place-items: center;
     display: grid;
-    justify-items: center;
+    padding-bottom: 20px;
 }
-#SensARinclusive_slider{
-    display: grid;
-    max-width: 1009px;
-    width: 100%;
-    padding-top: 30px;
-    box-sizing: border-box;
+.footer-social-networks{
+    place-items: center;
+    display: flex;
+    margin-top: 10px;
 }
-#SensARinclusive_slider ul, #SensARinclusive_slider li{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-#SensARinclusive_slider .slider li{
-    position: absolute;
-    opacity: 0;
-    width: inherit;
-    height: inherit;
-    transition: opacity .5s;
-}
-#SensARinclusive_slider .slider li img{
-    max-width: 1009px;
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-}
-#SensARinclusive_slider .slider li:first-child{
-    opacity: 1;
-}
-#SensARinclusive_slider .slider li:target{
-    opacity: 1;
-}
-.SensARinclusive_slider_menu{
-    text-align: center;
-    margin: 20px;
-}
-.SensARinclusive_slider_menu li{
-    display: inline-block;
-    text-align: center;
-}
-.SensARinclusive_slider_menu li a{
-    display: inline-block;
+.footer-social-networks > a{
     color: #ffffff;
     text-decoration: none;
-    background-color: #232e3e;
-    padding: 10px;
-    width: 20px;
-    height: 20px;
     font-size: 20px;
-    border-radius: 100%;
-}
-.SensARinclusive_slider_points{
     display: grid;
-    justify-items: center;
-    margin-top: 350px;
+}
+.footer-social-networks img{
+    margin-left: 10px;
+}
+.footer-social-networks:hover{
+    background-color: #ffffff30;
+}
+.footer-info > h3, p{
+    font-size: 20px;
+    text-align: center;
+}
+
+/* SensARinclusive */
+.slider-frame{
+    width: 1009px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 15s infinite;
+}
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+.slider-frame img {
+	width: 100%;
+}
+@keyframes slide {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
 }
 .SensARinclusive_main{
     display: flex;

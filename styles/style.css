@@ -23,7 +23,7 @@ body{
     border: 2px solid transparent;
 }
 .hiperlinks_header .hiperlink:hover{
-    border: 2px solid #ffffff;
+    background-color: #ffffff30;
 }
 #logo_name{
     color:#ffffff;
@@ -51,8 +51,41 @@ body{
 .hiperlink:hover{
     color:#3B82F6;
 }
+/* Footer */
+footer{
+    background-color: #232e3e;
+    place-items: center;
+    display: grid;
+    padding-bottom: 20px;
+}
+.footer-social-networks{
+    place-items: center;
+    display: flex;
+    margin-top: 10px;
+}
+.footer-social-networks > a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    display: grid;
+}
+.footer-social-networks img{
+    margin-left: 10px;
+}
+.footer-social-networks:hover{
+    background-color: #ffffff30;
+}
+.footer-info > h3, p{
+    font-size: 20px;
+    text-align: center;
+}
 
 /* Index */
+.index-article{
+    margin: 20px;
+    display: grid;
+    overflow: auto;
+}
 .slider-frame{
     width: 1009px;
     height: auto;
@@ -81,15 +114,15 @@ body{
     95% {margin-left: -100%;}
 }
 .index_main{
-    display: flex;
+    place-items: center;
+    display: grid;
     flex-direction: row;
     align-items: center;
 }
 .summary_info_code_whisperers{
-    margin: 20px;
-    margin-left: 149px;
+    place-items: center;
     display: grid;
-    text-align: justify;
+    text-align: center;
     max-width: 60%;
 }
 .summary_info_code_whisperers h3{
@@ -101,15 +134,4 @@ body{
     font-size: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-.index-summary-info{
-    max-width: 28%;
-    text-align: center;
-    margin-right: 50px;
-    min-width: 20%;
-    max-width: 20%;
-}
-.index-summary-info{
-    font-size: 35px;
-    text-align: start;
 }
