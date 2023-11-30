@@ -56,26 +56,13 @@ footer{
     background-color: #232e3e;
     place-items: center;
     display: grid;
-    padding-bottom: 20px;
-}
-.footer-social-networks{
-    place-items: center;
-    display: flex;
-    margin-top: 10px;
-}
-.footer-social-networks > a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 20px;
-    display: grid;
-}
-.footer-social-networks img{
-    margin-left: 10px;
+    padding-bottom: 5px;
 }
 .footer-social-networks:hover{
     background-color: #ffffff30;
 }
 .footer-info > h3, p{
+    margin: 5px;
     font-size: 20px;
     text-align: center;
 }
@@ -144,15 +131,18 @@ footer{
     margin-top: 10px;
     margin-left: 50px;
 }
-#doctor-stock-summary_info{
+#doctor-stock-article{
     margin: 20px;
-    margin-left: 149px;
 }
-#doctor-stock-summary_info h2{
+#doctor-stock-article h2{
     font-size: 50px;
 }
-#doctor-stock-summary_info p{
+#doctor-stock-article h5{
+    font-size: 28px;
+}
+#doctor-stock-article p{
     font-size: 30px;
+    text-align: justify;
 }
 .info_whisperers-py{
     min-width: 28%;
@@ -167,4 +157,28 @@ footer{
 .info_whisperers-py p, .info_whisperers-py list{
     text-align: justify;
     font-size: 25px;
+}
+@media(max-width:1283px){
+    .doctor-stock-main{
+        place-items: center;
+        display: grid;
+        margin: 40px;
+    }
+    .info_whisperers-py{
+        max-width: 70%;
+    }
+    .info_whisperers-py > p{
+        font-size: 30px;
+        text-align: center;
+    }
+    .info_whisperers-py list{
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer-info{
+        min-width: 80%;
+    }
+    .footer-info > h3, p{
+        font-size: 15px;
+    }
 }

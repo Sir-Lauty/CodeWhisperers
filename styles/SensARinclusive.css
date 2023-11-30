@@ -56,35 +56,28 @@ footer{
     background-color: #232e3e;
     place-items: center;
     display: grid;
-    padding-bottom: 20px;
-}
-.footer-social-networks{
-    place-items: center;
-    display: flex;
-    margin-top: 10px;
-}
-.footer-social-networks > a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 20px;
-    display: grid;
-}
-.footer-social-networks img{
-    margin-left: 10px;
+    padding-bottom: 5px;
 }
 .footer-social-networks:hover{
     background-color: #ffffff30;
 }
 .footer-info > h3, p{
+    margin: 5px;
     font-size: 20px;
     text-align: center;
 }
 
 /* SensARinclusive */
+.SensARinclusive_article{
+    margin: 20px;
+    place-items: center;
+    display: grid;
+    overflow: hidden;
+}
 .slider-frame{
     width: 1009px;
+	min-width: 100%;
     height: auto;
-    margin: 50px auto 0;
     overflow: hidden;
 }
 .slider-frame ul{
@@ -118,18 +111,17 @@ footer{
     flex-direction: row;
     align-items: center;
 }
-.main_SensARinclusive{
+.SensARinclusive-main{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 10px;
 }
 #summary_info{
+    place-items: center;
     margin: 20px;
-    margin-left: 149px;
     display: grid;
-    text-align: justify;
-    max-width: 60%;
+    max-width: 68%;
 }
 #summary_info h2{
     font-size: 50px;
@@ -137,6 +129,7 @@ footer{
     margin-bottom: 10px;
 }
 #summary_info p{
+    text-align: justify;
     font-size: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -145,4 +138,38 @@ footer{
     font-size: 30px;
     margin-top: 10px;
     margin-left: 50px;
+}
+@media(max-width:1283px){
+    .SensARinclusive-main{
+        place-items: center;
+        display: grid;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    #summary_info{
+        margin: 0px;
+        display: grid;
+        text-align: center;
+        max-width: 100%;
+    }
+    #summary_info > p{
+        text-align: justify;
+    }
+    .list_components{
+        max-width: 70%;
+    }
+    .list_components > p{
+        font-size: 30px;
+        text-align: center;
+    }
+    .list_components list{
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer-info{
+        min-width: 80%;
+    }
+    .footer-info > h3, p{
+        font-size: 15px;
+    }
 }
